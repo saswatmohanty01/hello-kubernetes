@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: saswatmohantyhellokubernetes 
+  name: hellokubernetes 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: saswatmohantyhellokubernetes
+      app: hellokubernetes
   template:
     metadata:
       labels:
-        app: saswatmohantyhellokubernetes 
+        app: hellokubernetes 
     spec:
       containers:
-        - name: saswatmohantyhellokubernetes 
+        - name: hellokubernetes 
           image: demoday.azurecr.io/saswatmohantyhellokubernetes
           ports:
           - containerPort: 80
