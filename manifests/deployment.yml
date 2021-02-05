@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hellokubernetes 
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: hellokubernetes
